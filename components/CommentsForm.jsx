@@ -92,7 +92,7 @@ const CommentsForm = ({slug}) => {
       </div>
       {error && <p className="text-xs text-red-500">Todos los campos son requeridos</p>}
       <div className="mt-8">
-        <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-green-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Post Comment</button>
+        <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-green-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Comentar</button>
         {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comentario subido para revision de la moderacion</span>}
       </div>
     </div>
