@@ -7,7 +7,7 @@ const PostCard = ({post}) => {
   
   return (
    
-    <div className='bg-blue-900 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+    <div className='bg-[#04182d] shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
       <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
         <img
         src={post.featuredImage.url}
@@ -16,8 +16,8 @@ const PostCard = ({post}) => {
       />
 
       </div>
-     <h1 className='text-green-600 transition duration-700 text-center mb-8 cursor-pointer
-     hover:text-green-400 text-3xl font-semibold'>
+     <h1 className='text-[#32c408] transition duration-700 text-center mb-8 cursor-pointer
+     hover:text-white text-3xl font-semibold'>
       <Link href={`/post/${post.slug}`}>
         {post.title}
       </Link>
@@ -39,7 +39,7 @@ const PostCard = ({post}) => {
         </p>
       </div>
       <div className='font-medium text-gray-700'>
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-[#32c408]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
         </svg>
         <span className='text-white'>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
@@ -52,7 +52,7 @@ const PostCard = ({post}) => {
      <div className='text-center'>
       <Link href={`/post/${post.slug}`}>
         <span className='transition duration-500 transform hover:-translate-y-1
-        inline-block bg-green-800 text-lg font-medium rounded-full text-white
+        inline-block bg-[#32c408] text-lg font-medium rounded-full text-black t-bold
         px-8 py-3 cursor-pointer'>
           Continuar Leyendo
         </span>
