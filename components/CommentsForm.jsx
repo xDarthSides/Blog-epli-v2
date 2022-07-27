@@ -75,24 +75,24 @@ const CommentsForm = ({slug}) => {
       });
   };
   return (
-    <div className="bg-blue-900 shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4 text-green-600">Deja un comentario</h3>
+    <div className="bg-[#04182d] shadow-lg rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4 text-[#32c408]">Deja un comentario</h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
-        <textarea value={formData.comment} onChange={onInputChange} className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-green-800 text-white" name="comment" placeholder="Comentario" />
+        <textarea value={formData.comment} onChange={onInputChange} className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-[#32c408] bg-white text-black" name="comment" placeholder="Comentario"  />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-        <input type="text" value={formData.name} onChange={onInputChange} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-green-800 text-white" placeholder="Nombre" name="name" />
-        <input type="email" value={formData.email} onChange={onInputChange} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-green-800 text-white" placeholder="Email" name="email" />
+        <input type="text" value={formData.name} onChange={onInputChange} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-[#32c408] bg-white text-black" placeholder="Nombre" name="name" />
+        <input type="email" value={formData.email} onChange={onInputChange} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-[#32c408] bg-white text-black" placeholder="Email" name="email" />
       </div>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <div>
           <input checked={formData.storeData} onChange={onInputChange} type="checkbox" id="storeData" name="storeData" value="true" />
-          <label className="text-green-600 cursor-pointer ml-2" htmlFor="storeData">Guardar mi Email y Nombre para la proxima vez que comente</label>
+          <label className="text-[#32c408] cursor-pointer ml-2" htmlFor="storeData">Guardar mi Email y Nombre para la proxima vez que comente</label>
         </div>
       </div>
       {error && <p className="text-xs text-red-500">Todos los campos son requeridos</p>}
       <div className="mt-8">
-        <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-green-800 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Comentar</button>
+        <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-white inline-block bg-[#32c408] text-lg font-medium rounded-full text-black t-bold px-8 py-3 cursor-pointer">Comentar</button>
         {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comentario subido para revision de la moderacion</span>}
       </div>
     </div>
