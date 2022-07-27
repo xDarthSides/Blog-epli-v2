@@ -62,10 +62,10 @@ const Header = () => {
   ];
   return (
     <div className='container mx-auto px-10 mb-8'>
-        <div className='border-b w-full inline-block border-green-600 py-6'>
+        <div className='border-b w-full inline-block border-[#32c408] py-6'>
             <div className='md:float-left block'>
                 <Link href="/">
-                    <span className='cursor-pointer font-bold text-4xl text-green-600 mr-2 '>
+                    <span className='cursor-pointer font-bold text-4xl text-[#32c408] mr-2 '>
                     EPLI Blog
 
                     </span>
@@ -75,7 +75,7 @@ const Header = () => {
             <div className='hidden md:float-left md:contents'>
               {categories.map((category) => (
                 <Link key={category.slug} href={`/category/${category.slug}`}>
-                    <span className='md:float-right mt-2 align-middle text-green-600 ml-4 font-semibold cursor-pointer'>
+                    <span className='md:float-right mt-2 align-middle text-[#32c408] hover:text-white ml-4 font-semibold cursor-pointer'>
                         {category.name}
 
                     </span>
@@ -85,7 +85,7 @@ const Header = () => {
             <div className=" mt-4 flex justify-left space-x-3">
         {social.map((item) => (
           
-          <a key={item.name} href={item.href} className="text-green-600 hover:text-green-400">
+          <a key={item.name} href={item.href} className="text-[#32c408] hover:text-white">
             
             <span className="sr-only">{item.name}</span>
             <item.icon className="h-5 w-5" aria-hidden="true" />
