@@ -14,7 +14,7 @@ const Header = () => {
   const social = [
     {
       name: "Facebook",
-      href: "https://www.facebook.com/CamilaSoundyEPLI/",
+      href: "https://www.facebook.com/eplibycamilasoundy/",
   
      
       icon: (props) => (
@@ -29,7 +29,7 @@ const Header = () => {
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/camilasoundy/",
+      href: "https://www.instagram.com/equidadparalainclusion/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
