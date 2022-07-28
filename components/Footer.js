@@ -2,7 +2,7 @@
 const social = [
   {
     name: "Facebook",
-    href: "https://www.facebook.com/CamilaSoundyEPLI/",
+    href: "https://www.facebook.com/EPLIbyCamilaSoundy/",
 
    
     icon: (props) => (
@@ -17,7 +17,7 @@ const social = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/camilasoundy/",
+    href: "https://www.instagram.com/equidadparalainclusion/?igshid=YmMyMTA2M2Y%3D/",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
